@@ -13,4 +13,4 @@ flask --version
 # How to run app?
 6. Run you app with: python -m pip flask run flask < by default port it 5000, if you want to run on other port run
 python3 -m flask run --port 5001 >
-7. Go to your browser and open http://localhost:5000/ <or other port http://localhost:5001>
+7. Go to your browser and open http://localhost:5000/ ( or other port http://localhost:5001 )
