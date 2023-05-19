@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Search X</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Container for search form to get user's input -->
+        <h1 class="title">Search X</h1>
+        <div class="search-form-container">
+            <form id="search-form">
+                <label for="car_id">Find Car by ID:</label>
+                <input type="number" id="car_id" required>
+                <!-- Logic if we want to prevents strings to be inserted and only numbers we want to get from user -->
+                <!-- <input type="text" id="car_id" required> -->
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <!-- Container for result  -->
+        <div id="result-container">
+            <div id="result"></div>
+        </div>
+
+        <!-- Container to change the type of resturned information -->
+        <div class="display-type-container">
+            <label for="display-type">Display Type:</label>
+            <select id="display-type">
+                <option value="json">JSON</option>
+                <option value="string">String</option>
+            </select>
+        </div>
+        <footer class="footer">Made with &#9829; by <a href="https://www.linkedin.com/in/aleksandra-ola-zieminska-1077b3103/">olazieminska</a> | 2023</footer>
+    </div>
+
+ 
+    <script src="{{ url_for('static', filename='script/main.js') }}"></script>
+</body>
+</html>

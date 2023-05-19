@@ -1,0 +1,119 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+    margin-top: 5;
+    color: #00a3ad;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    color: #00a3ad;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #dbf5f6, #7ae5eb); /* Adjust the colors to your desired pink-pastel gradient */
+    z-index: -1;
+  }
+  
+
+
+.search-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  margin-bottom: 10px;
+  color: #00a3ad;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+button[type="submit"] {
+  margin-top: 2px;  
+  padding: 8px 20px;
+  background-color: #00a3ad;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #008c95;
+}
+
+#result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#result {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-wrap: break-word;
+  margin-bottom: 5px;
+}
+
+a {
+    color: #00a3ad; /* Set the default color to blue */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: turquoise; /* Set the color to turquoise on hover */
+  }
+  
+  a:active {
+    color: turquoise; /* Set the color to turquoise when clicked */
+  }
