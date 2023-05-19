@@ -9,4 +9,6 @@ Get the repo
 2. Get Python extension in VS Code
 3. In VS Code, open the Command Palette (View > Command Palette or (⇧⌘P)). Then select the Python: Create Environment command to create a virtual environment in your workspace. Select venv and then the Python environment you want to use to create it.
 4. Install dependencies pip install -r requirements.txt
-5. Run you app with: python3 -m flask run —port 5001 ( or python -m pip install flask )
+5. Run you app with: python -m pip flask run flask < by default port it 5000, if you want to run on other port run
+python3 -m flask run --port 5001 >
+6. Go to your browser and open http://localhost:5000/ <or other port http://localhost:5001>
